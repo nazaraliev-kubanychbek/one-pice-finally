@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #171717;
+    font-family: Montserrat;
+    color: #FFF;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-6{
+    width: 50%;
+    padding: 0 10px;
+}
+
+.header {
+    padding: 16px 34px 0 34px;
+    display: flex;
+    column-gap: 74px;
+}
+
+.header-title {
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.banner-text {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 28px;
+}
+
+.character{
+    padding-top: 74px;
+    margin: 100px 0;
+}
+
+.character-title{
+    font-size: 96px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.character-text{
+    margin-top: 52px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.character-img{
+    width: 100%;
+}
+
+.character-luffy{
+    position: relative;
+}
+.luffy-hat{
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+.luffy-text{
+    margin-top: 110px;
+}
+
+.sanji-img{
+    margin-top: 190px;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .container{
+        max-width: 1140px;
+    }
+    .luffy-hat{
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container{
+        max-width: 720px;
+    }
+    .header-title{
+        font-size: 54px;
+    }
+    .header-logo{
+        width: 200px;
+    }
+    .character-title{
+        font-size: 64px;
+    }
+    .luffy-hat{
+        width: 150px;
+    }
+    .header{
+        column-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 540px;
+    }
+    .col-6{
+        width: 100%;
+    }
+    .header-title{
+        font-size: 42px;
+    }
+    .header-logo{
+        width: 100px;
+    }
+    .header{
+        column-gap: 10px;
+    }
+    .luffy-hat{
+        top: -10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container{
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .header{
+        column-gap: 5px;
+    }
+    .header-title{
+        font-size: 18px;
+    }
+    .header-logo{
+        width: 45px;
+    }
+    .banner-text{
+        font-size: 16px;
+    }
+    .character-text{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .character-title{
+        font-size: 32px;
+    }
+    .luffy-hat{
+        top: -20px;
+    }
+    .character{
+        margin: 50px 0;
+    }
+    .sanji-img{
+        margin-top: 0;
+    }
+}
